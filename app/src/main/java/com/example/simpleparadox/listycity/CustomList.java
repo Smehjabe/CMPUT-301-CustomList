@@ -54,7 +54,13 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
         return;
     }
-    public Boolean hasCity(){
-        return false;
+    public Boolean hasCity() {
+        if (cities.isEmpty() == false) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
+
 }
